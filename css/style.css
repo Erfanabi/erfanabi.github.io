@@ -477,6 +477,7 @@ a {
 .footer__row {
   display: grid;
   gap: 2.5rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .footer-col {
@@ -548,11 +549,12 @@ a {
   }
 
   .footer__row {
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
     margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .footer-col.footer-image .back-white:nth-child(1) {
