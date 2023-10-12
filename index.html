@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="assets/libs/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <title>تاکسی اینترنتی تپسی - اپلیکیشن درخواست خودرو و پیک | TAPSI</title>
   </head>
@@ -92,7 +93,11 @@
       </div>
     </section>
 
-    <div class="services-section container">
+    <div
+      class="services-section container"
+      data-aos="fade-up"
+      data-aos-duration="300"
+    >
       <section class="services">
         <h2>سرویس های تپسی</h2>
         <div class="services__tabs" id="nav-tab">
@@ -271,7 +276,7 @@
       <hr />
     </div>
 
-    <div class="feature-section container">
+    <div class="feature-section container" data-aos="fade-up">
       <section class="feature">
         <div class="feature__image">
           <img src="/assets/images/i-mac-1.png" alt="" />
@@ -299,7 +304,7 @@
       </section>
     </div>
 
-    <div class="feature-section container feature-reverse">
+    <div class="feature-section container feature-reverse" data-aos="fade-up">
       <section class="feature">
         <div class="feature__image">
           <img src="/assets/images/macbook.png" alt="" />
@@ -321,7 +326,29 @@
       </section>
     </div>
 
-    <section class="block-plan-main container">
+    <div class="parallx">
+      <div class="container">
+        <div class="content-wrapper">
+          <div>
+            <h3 class="title">بسته امنیت سفر</h3>
+          </div>
+          <!-- <div class="divar"></div> -->
+          <div>
+            <h3 class="title">درخواست تلفنی</h3>
+          </div>
+          <!-- <div class="divar"></div> -->
+          <div>
+            <h3 class="title">دسترس‌پذیری برای توان‌یابان</h3>
+          </div>
+          <!-- <div class="divar"></div> -->
+          <div>
+            <h3 class="title">امکانات هوشمند</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="block-plan-main container" data-aos="fade-up">
       <div class="block-plan">
         <div class="plan">
           <div class="card">
@@ -412,7 +439,7 @@
       </div>
     </section>
 
-    <section class="contact-us container">
+    <section class="contact-us container" data-aos="fade-up">
       <div class="contact__heading">
         <h2>ارتباط با ما</h2>
         <p>شما می توانید نظرات و انتقادات خود را برای ما بفرستید</p>
@@ -586,5 +613,9 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

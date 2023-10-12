@@ -290,7 +290,7 @@ p {
 
 .feature-section {
   margin-top: 10rem;
-  margin-bottom: 13rem;
+  margin-bottom: 10rem;
 }
 
 .feature {
@@ -1028,4 +1028,66 @@ hr {
   height: 1px;
   background-color: #ddd;
   border: none;
+}
+
+/* ! parallx */
+/* ! parallx */
+/* ! parallx */
+
+.parallx {
+  background-image: url("/assets/images/parallax.jpeg");
+  background-size: cover;
+  background-attachment: fixed !important;
+}
+
+.parallx .content-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parallx .content-wrapper > div {
+  margin: 10px 0;
+}
+
+.parallx .content-wrapper .title {
+  padding: 10px 0;
+  font-weight: 700;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 786px) {
+  .parallx {
+    height: 200px;
+  }
+
+  .parallx .container {
+    height: 100%;
+  }
+
+  .parallx .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .parallx .content-wrapper .title {
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .parallx .content-wrapper > div {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .parallx .content-wrapper > div {
+    max-width: max-content;
+  }
 }
